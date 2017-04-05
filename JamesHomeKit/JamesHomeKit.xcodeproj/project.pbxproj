@@ -16,6 +16,7 @@
 		0B0D868D1E94D879009DC3CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0B0D868B1E94D879009DC3CF /* LaunchScreen.storyboard */; };
 		0B0D86981E94D879009DC3CF /* JamesHomeKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D86971E94D879009DC3CF /* JamesHomeKitTests.m */; };
 		0B0D86A31E94D879009DC3CF /* JamesHomeKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D86A21E94D879009DC3CF /* JamesHomeKitUITests.m */; };
+		0B0D86B31E94D91C009DC3CF /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0D86B21E94D91C009DC3CF /* HomeKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		0B0D869E1E94D879009DC3CF /* JamesHomeKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JamesHomeKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B0D86A21E94D879009DC3CF /* JamesHomeKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JamesHomeKitUITests.m; sourceTree = "<group>"; };
 		0B0D86A41E94D879009DC3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0B0D86B01E94D91B009DC3CF /* JamesHomeKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JamesHomeKit.entitlements; sourceTree = "<group>"; };
+		0B0D86B21E94D91C009DC3CF /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B0D86B31E94D91C009DC3CF /* HomeKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,6 +91,7 @@
 				0B0D86961E94D879009DC3CF /* JamesHomeKitTests */,
 				0B0D86A11E94D879009DC3CF /* JamesHomeKitUITests */,
 				0B0D86781E94D879009DC3CF /* Products */,
+				0B0D86B11E94D91C009DC3CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +108,7 @@
 		0B0D86791E94D879009DC3CF /* JamesHomeKit */ = {
 			isa = PBXGroup;
 			children = (
+				0B0D86B01E94D91B009DC3CF /* JamesHomeKit.entitlements */,
 				0B0D867D1E94D879009DC3CF /* AppDelegate.h */,
 				0B0D867E1E94D879009DC3CF /* AppDelegate.m */,
 				0B0D86801E94D879009DC3CF /* ViewController.h */,
@@ -141,6 +147,14 @@
 				0B0D86A41E94D879009DC3CF /* Info.plist */,
 			);
 			path = JamesHomeKitUITests;
+			sourceTree = "<group>";
+		};
+		0B0D86B11E94D91C009DC3CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0B0D86B21E94D91C009DC3CF /* HomeKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -210,8 +224,13 @@
 				TargetAttributes = {
 					0B0D86761E94D879009DC3CF = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = ELYXV54F6A;
+						DevelopmentTeam = 2PG34PH6C8;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
+						};
 					};
 					0B0D86921E94D879009DC3CF = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -431,10 +450,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ELYXV54F6A;
+				CODE_SIGN_ENTITLEMENTS = JamesHomeKit/JamesHomeKit.entitlements;
+				DEVELOPMENT_TEAM = 2PG34PH6C8;
 				INFOPLIST_FILE = JamesHomeKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fengjing.JamesHomeKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QianHaiLDY.zucheStaff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -443,10 +463,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = ELYXV54F6A;
+				CODE_SIGN_ENTITLEMENTS = JamesHomeKit/JamesHomeKit.entitlements;
+				DEVELOPMENT_TEAM = 2PG34PH6C8;
 				INFOPLIST_FILE = JamesHomeKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = fengjing.JamesHomeKit;
+				PRODUCT_BUNDLE_IDENTIFIER = com.QianHaiLDY.zucheStaff;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
