@@ -17,6 +17,12 @@
 		0B0D86981E94D879009DC3CF /* JamesHomeKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D86971E94D879009DC3CF /* JamesHomeKitTests.m */; };
 		0B0D86A31E94D879009DC3CF /* JamesHomeKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0B0D86A21E94D879009DC3CF /* JamesHomeKitUITests.m */; };
 		0B0D86B31E94D91C009DC3CF /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0B0D86B21E94D91C009DC3CF /* HomeKit.framework */; };
+		0BB99AD81E95ED6000AAEBD1 /* HomesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB99AD71E95ED6000AAEBD1 /* HomesModel.m */; };
+		0BB99AD91E95ED6000AAEBD1 /* HomesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB99AD71E95ED6000AAEBD1 /* HomesModel.m */; };
+		0BB99ADA1E95ED6000AAEBD1 /* HomesModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB99AD71E95ED6000AAEBD1 /* HomesModel.m */; };
+		0BB99ADD1E95F22F00AAEBD1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB99ADC1E95F22F00AAEBD1 /* MainViewController.m */; };
+		0BB99ADE1E95F22F00AAEBD1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB99ADC1E95F22F00AAEBD1 /* MainViewController.m */; };
+		0BB99ADF1E95F22F00AAEBD1 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BB99ADC1E95F22F00AAEBD1 /* MainViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +62,10 @@
 		0B0D86A41E94D879009DC3CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0B0D86B01E94D91B009DC3CF /* JamesHomeKit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = JamesHomeKit.entitlements; sourceTree = "<group>"; };
 		0B0D86B21E94D91C009DC3CF /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
+		0BB99AD61E95ED6000AAEBD1 /* HomesModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomesModel.h; sourceTree = "<group>"; };
+		0BB99AD71E95ED6000AAEBD1 /* HomesModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomesModel.m; sourceTree = "<group>"; };
+		0BB99ADB1E95F22F00AAEBD1 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		0BB99ADC1E95F22F00AAEBD1 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +129,10 @@
 				0B0D868E1E94D879009DC3CF /* Info.plist */,
 				0B0D86861E94D879009DC3CF /* JamesHomeKit.xcdatamodeld */,
 				0B0D867A1E94D879009DC3CF /* Supporting Files */,
+				0BB99AD61E95ED6000AAEBD1 /* HomesModel.h */,
+				0BB99AD71E95ED6000AAEBD1 /* HomesModel.m */,
+				0BB99ADB1E95F22F00AAEBD1 /* MainViewController.h */,
+				0BB99ADC1E95F22F00AAEBD1 /* MainViewController.m */,
 			);
 			path = JamesHomeKit;
 			sourceTree = "<group>";
@@ -299,7 +313,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B0D86821E94D879009DC3CF /* ViewController.m in Sources */,
+				0BB99ADD1E95F22F00AAEBD1 /* MainViewController.m in Sources */,
 				0B0D867F1E94D879009DC3CF /* AppDelegate.m in Sources */,
+				0BB99AD81E95ED6000AAEBD1 /* HomesModel.m in Sources */,
 				0B0D86881E94D879009DC3CF /* JamesHomeKit.xcdatamodeld in Sources */,
 				0B0D867C1E94D879009DC3CF /* main.m in Sources */,
 			);
@@ -309,6 +325,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB99AD91E95ED6000AAEBD1 /* HomesModel.m in Sources */,
+				0BB99ADE1E95F22F00AAEBD1 /* MainViewController.m in Sources */,
 				0B0D86981E94D879009DC3CF /* JamesHomeKitTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -317,6 +335,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BB99ADA1E95ED6000AAEBD1 /* HomesModel.m in Sources */,
+				0BB99ADF1E95F22F00AAEBD1 /* MainViewController.m in Sources */,
 				0B0D86A31E94D879009DC3CF /* JamesHomeKitUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,6 +561,7 @@
 				0B0D86A91E94D879009DC3CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B0D86AA1E94D879009DC3CF /* Build configuration list for PBXNativeTarget "JamesHomeKitTests" */ = {
 			isa = XCConfigurationList;
@@ -549,6 +570,7 @@
 				0B0D86AC1E94D879009DC3CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0B0D86AD1E94D879009DC3CF /* Build configuration list for PBXNativeTarget "JamesHomeKitUITests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +579,7 @@
 				0B0D86AF1E94D879009DC3CF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
